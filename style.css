@@ -1,0 +1,50 @@
+--root{
+    --duration:2s;
+}
+
+.loading{
+    border:rgb(0, 0, 0) 2px solid;
+    width:30vw;
+    height:10vh;
+}
+.animation{
+    width:30vw;
+    height:10vh;
+    background-color:red;
+}
+
+#animation1{
+    width:0vw;   
+    transition:width 5s linear;
+}
+
+#animation2{
+    width:5vw;
+    position:relative;
+    transition: left 5s linear;
+    /* animation:two 0.5s infinite ease; */
+}
+
+@keyframes two{
+    from{
+        left:0vw;
+    }
+    to{
+        left:25vw;
+    }
+}
+
+#button{
+    width:5vw;
+    height:5vh;
+    background-color: rgb(108, 27, 27);
+    color:black;
+    border:10px black solid;
+    margin-top:1vh;
+}
+
+/* html:hover{ 
+        #animation1{
+            width:30vw;
+        }
+    } */
